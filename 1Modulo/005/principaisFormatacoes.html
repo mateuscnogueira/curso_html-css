@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica e formatação HTML</title>
+
+<!--Exemplo de estilo-->
+    <style>
+        body {
+            background-color: lightcyan;
+        }  
+    </style>
+
+<!--Seletor para determinar a cor do texto marcado (podia fazer dentro do outro style, coloquei assim só para poder visualizar melhor)-->
+    <style>
+        mark {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Eu moro na <address>Rua Almirante Wandenkolk, Campos - RJ</address>
+    </p>
+
+    <h1>Principais Formatações</h1>
+
+        <h2>Negrito / Destaque</h2>
+            <p>Nesta frase temos um <b>termo em negrito</b> utilizando a tag B (Não Semântico, provavelmente no futuro será considerada obsoleta).</p> 
+
+            <p>Nesta frase temos um <strong>termo em destaque</strong> utilizando a tag STRONG (Semântico).</p>
+
+        <hr>
+        <h2>Itálico / Ênfase</h2>
+            <p>Nesta frase temos um <i>termo em itálico</i> usando a tag I (Não Semântico, provavelmente no futuro será considerada obsoleta).</p>
+            
+            <p>Nesta frase temos um <en>termo em ênfase</en> usando a tag EN (Semântico).</p>
+            
+        <hr>
+        <!--Marcador de texto (Aquele padrão amarelo)-->
+        <h2>Texto Marcado</h2>
+            <p>Nesta frase temos um <mark style="background-color: lightgreen;">termo marcado</mark> usando a tag MARK, também com a cor informada.</p>
+            <!--
+                Se quiser alterar a cor do marcador é preciso mudar o estilo (CSS),
+                pode-se fazer alterando dentro da tag, com o comando style > background-color: "cor";
+            -->
+
+            <p>Nesta frase temos um <mark>termo marcado na cor determinada pelo seletor</mark> criado.</p>
+            <!--
+                Porém, pensando em um cenário onde deseje fazer multiplas marcações da mesma cor, pode-se criar um seletor para isto.
+                Este seletor fica dentro de <head>
+            -->
+        
+        <hr>
+        <h2>Texto grande e pequeno</h2>
+            <p>Criação de um <big>texto grande</big> e de um <small>texto pequeno</small>.</p>
+            <!--a tag BIG atualmente é considerada obsoleta, por isso não utiliza-se mais-->
+        
+        <hr>
+        <h2>Texto Deletado</h2>
+            <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+
+        <hr>
+        <h2>Texto Inserido / Sublinhado </h2>
+            <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+
+            <p>Existe também a tag U (Não semântica, que provavelmente no futuro será considerada obsoleta), para dizer que o <u>texto está sublinado</u>.</p>
+
+        <hr>
+        <h2>Texto Sobrescrito</h2>
+            <p>Para inserir coisas do tipo x<sup>20</sup>+3</p> <!--SUP = em cima-->
+
+        <hr>
+        <h2>Texto Subscrito</h2>
+            <p>Para inserir coisas do tipo H<sub>2</sub>0</p> <!--SUB = embaixo-->
+</body>
+</html>
+
+<!-- 
+    para utilizar tags em volta de um texto selecionado:
+    command + shift + p
+    abb (emmet: envolver com abreviação)
+    digitar a tag + enter
+-->

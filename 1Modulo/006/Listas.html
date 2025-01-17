@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas</h1>
+        <h2>Listas Ordenadas</h2>
+            <ol type="1" start="1">
+            <!--ctrl + espaço = mostra as opções para aquela ação,
+                em type existem algumas opções (1, A, a, I, i).
+                start="x" é para determinar de onde começará a contagem, se x=3 então será 3,4,5...
+            -->
+                <li>Acordar</li>
+                <li>Tomar café</li>
+                <li>Natação</li>
+                <li>Tomar banho</li>
+                <li>1h de curso HTML/CSS</li>
+                <li>Almoçar</li>
+            </ol>
+
+        <hr>
+        <h2>Listas Não Ordenadas</h2>
+            <ul type="SQUARE"> <!-- type: DISC, CIRCLE, SQUARE -->
+                <li>Pão</li>
+                <li>Presunto</li>
+                <li>Queijo</li>
+                <li>Ovo</li>
+                <li>Manteiga</li>
+            </ul>
+
+        <hr>
+        <h2>Juntando os 2 tipos de listas</h2>
+            <h3>Linguagens de Programação</h3>
+                <ul type="disc">
+                    <li>Estudando</li>
+                        <ol type="a">
+                            <li>Java</li>
+                            <li>HTML e CSS</li>
+                        </ol>
+                    <li>Para Estudar Futuramente</li>
+                        <ol type="a" start="3"> <!-- O start é um parâmetro númerico, sendo assim para simular o 'c' colocamos 3-->
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ol>
+                </ul>
+
+        <hr>
+        <h2>Lista de Definições</h2>
+            <dl>
+                <dt>Termo</dt>
+                <dd>Descrição</dd>
+
+                <dt>HTML</dt>
+                <dd>Linguagem de Marcação para criação do conteúdo de um site.</dd>
+
+                <dt>CSS</dt>
+                <dd>Linguagem de Marcação para criação do design de um site.</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Linguagem de Programação para criação de interatividade de um site.</dd>
+            </dl>
+        
+
+        <hr>
+        <hr>
+        <h2>IFF - Matriz Curricular - Disciplinas a serem feitas</h2>
+                <ol start="4">
+                    <li>Período</li>
+                        <ul type="disc">
+                            <li>Estrutura de Dados</li>
+                            <li>Projeto Orientado à Objetos</li>
+                        </ul>
+                    <li>Período</li>
+                        <ul type="disc">
+                            <li>Laboratório de Orientação a Objetos</li>
+                                <ul type="circle">
+                                    <li><i>Pré-Requisito: Projeto OO</i></li>
+                                </ul>
+                            <li>Programação Web</li>
+                            <li>Pesquisa Operacional</li>
+                                <ul type="circle">
+                                    <li><i>Pré-Requisito: Estrutura de Dados</i></li>
+                                </ul>
+                            <li>Inteligência Computacional</li>
+                                <ul type="circle">
+                                    <li><i>Pré-Requisito: Estrutura de Dados</i></li>
+                                </ul>
+                        </ul>
+                    <li>Período</li>
+                        <ul type="disc">
+                            <li>Metodologia Científica</li>
+                            <li>Sistema de Suporte à Decisão</li>
+                                <ul type="circle">
+                                    <li><i>Pré-Requisito: Programação Web</i></li>
+                                </ul>
+                            <li>Gerência de Processos</li>
+                            <li>Sistemas Distribuídos</li>
+                                <ul type="circle">
+                                    <li><i>Pré-Requisito: Estrutura de Dados</i></li>
+                                </ul>
+                        </ul>
+                    <li>Período</li>
+                        <ul type="disc">
+                            <li>Projeto de Graduação I</li>
+                                <ul type="circle">
+                                    <li><i>Pré-Requisito: Metodologia Científica</i></li>
+                                </ul>
+                            <li>Segurança da Informação</li>
+                            <li>Engenharia do Conhecimento</li>
+                                <ul type="circle">
+                                    <li><i>Pré-Requisito: Sistema de Suporte à Decisão</i></li>
+                                </ul>
+                        </ul>
+                    <li>Período</li>
+                        <ul type="disc">
+                            <li>Projeto de Graduação II</li>
+                                <ul type="circle">
+                                    <li><i>Pré-Requisito: Projeto de Graduação I</i></li>
+                                </ul>
+                            <li>Gestão de TI</li>
+                            <li>Atividades Complementares (520h)</li>
+                        </ul>
+                </ol>
+</body>
+</html>
+
+<!--
+    'alt + selecionar' o cursor na casa do caractere da palavra a ser mudada,
+    se assemelha a 'command + f2' que renomeia todas as palavras que são iguais a palavra selecionada,
+    porém nesse atalho é possível adicionar coisas depois do último caractere ou fazer alguma alteração antes/depois da casa selecionada.
+-->
+

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+/* Pode colocar sem o h1 também, porém valerá para todos os elementos que tiverem o id = "principal" */
+
+
+h2 {
+    color: rgb(73, 109, 71);
+}
+
+.intermediario {
+    color: rgba(207, 207, 3, 0.707);
+}
+
+.avancado {
+    color: red;
+    font-weight: bold;
+}
+
+.destaque {
+    background-color: #c5c56070;
+}
+
+
+/* 
+    em HTML é id = em CSS é # 
+    em HTML é class = em CSS é .
+
+    RECOMENDAÇÃO:
+    id utiliza-se com somente 1 elemento (pode ter o mesmo se for 2 arquivos .html distintos)
+    class utiliza-se com 2 ou mais
+*/

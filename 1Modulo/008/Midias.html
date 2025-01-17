@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou aumente/diminua o tamanho do zoom do navegador.</p>
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="image/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="image/foto-m.png" type="image/png">
+            <img src="image/foto-g.png" alt="Imagem Flexível">
+        </picture>
+
+        <!--
+            Esse bloco serve para verificar a largura do navegador aberto, fazendo com que haja a
+            alternância do tamanho das imagens conforme a largura do momento
+            Importante lembrar que a ordem dos 'source' deve estar correta para funcionar.
+
+            <picture>
+                <source media="(min-width: 1050px)" srcset="image/foto-g.png" type="image/png">
+                <source media="(min-width: 750px)" srcset="image/foto-m.png" type="image/png">
+                <img src="image/foto-p.png" alt="Imagem Flexível">
+            </picture>
+            também pode usar assim, com a largura mínima.
+        -->
+    
+    <h1>Reproduzindo Áudios</h1>
+        <p>Teste de áudio em HTML5.</p>
+
+        <audio preload="metadata" autoplay controls loop>
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia/guanacast-33.ogg" type="audio/ogg">
+            <source src="midia/guanacast-33.wav" type="audio/wav">
+            <p>
+                Infelizmente seu navegador não consegue reproduzir áudio.
+                <a href="midia/guanacast-33.mp3">Clique aqui</a> para baixar o arquivo MP3.
+            </p>
+        </audio>
+        <!--
+            Esse bloco introduz a reprodução do arquivo de aúdio por tentativa, primeiro MP3
+            seguido por OGG, seguido por WAV. Caso não consiga reproduzir nenhum desses, é informado uma mensagem.
+        -->
+
+        <!-- 
+            Outra forma de reproduzir audio
+            <audio src="midia/Moving In The Shadows - The Soundlings.mp3" controls autoplay></audio>
+
+            tipos de arquivo de audio: MP3, WAV, OGG
+
+            preload: Auto - Carrega o site após todo conteúdo do áudio ser carregado (não é muito bom para arquivos maiores)
+                     Metadata - Carrega informações básicas, nome, data, duração
+                     None - Não carrega nada até que o usuário clique Play nos controles
+
+            autoplay - Serve para que o aúdio inicie sozinho (não está funcionando por algum motivo desconhecido)
+
+            controls - Para mostrar os controles do áudio (play, barra de navegação, som, velocidade de reprodução)
+
+            loop - Para ficar repetindo quando o aúdio terminar
+        -->
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+        <!-- 
+            MP4, WEBM, OGV 
+            Software Handbreake serve para conversão/redução de arquivos de vídeo
+
+            <video src="midia/skate.mp4" width="500" controls></video>
+
+            videos hospedados localmente consomem muito tráfego de dados, por isso não são muito bons
+        -->
+        
+        <p>Este video esta hospedado no meu próprio computador</p>
+
+        <video width="500" poster="image/HTML5_logo.png" controls loop>
+            <source src="midia/skate.mp4" type="video/mp4">
+            <source src="midia/skate.m4v" type="video/mp4">
+            <source src="midia/skate.webm" type="video/webm">
+            <source src="midia/skate.ogv" type="video/ogg">
+            <p>Infelizmente seu navegador não possui compatibilidade para reproduzir o vídeo.</p>
+        </video>
+
+    <h1>Inserindo Vídeos Externos - YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GQYVu94I998?si=HyG7LhaBGwkbQtGW" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Selecionar o vídeo no YT > compartilhar > incorporar > copiar code html > colar -->
+
+    <h2>Inserindo videos do Vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/197362334?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+    width="600" height="338" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+    title="yotube's Animation Reel 2016"></iframe>
+</body>
+</html>

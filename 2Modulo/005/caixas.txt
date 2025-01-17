@@ -1,0 +1,10 @@
+------ BOX MODEL ------
+
+Tipos de caixa: 
+
+    - box-level: quebra a linha e ocupa toda a largura da página. (isolado)
+        Exemplo: <div>, <h1> - <h6>, <p>, <main>, <header>, <nav>, <article>, <aside>, <footer>, <form>, <video>
+
+    - inline-level: não quebra a linha, ou seja, pode ficar entre conteúdos.
+        Exemplo: <span>, <a>, <code>, <small>, <strong>, <em>, <sup> - <sub>, <label>, <buttom>, <input>, <select>
+

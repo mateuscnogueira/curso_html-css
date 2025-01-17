@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Primeiro vai tentar Arial, dps Helvetica, dps Sans. Tudo depende se o navegador possui ou não a fonte */
+
+            /*
+                Medidas Absolutas: cm, mm, in, px, pt, pc -> Recomentado usar 'px'
+                Medidas Relativas: em, ex, rem, vw, vh, %  -> Recomentado usar 'em'
+
+                Geralmete 1em = 16px
+            */
+            font-size: 16px; /*16px é o padrão*/
+
+            /*
+                font-weight:
+                lighter, normal, bold, bolder;
+                100, 200, 300, 400... 900;
+            */
+            font-weight: normal;
+
+            /* font-style: italic, normal; */
+            font-style: normal;
+
+            /* texto sublinado = undeline*/
+            text-decoration: none;
+        }
+
+        
+        h1, h2 {
+            /* 
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: 'Times New Roman', Times, serif;
+            
+            Para representar o bloco a cima, podemos utilizar o shorthand font:
+            - font-style > font-weight > font-size > font-family
+
+            Se não quiser utilizar alguma propriedade, é só não colocar e pulá-la.
+            */
+            font: italic bolder 3em 'Times New Roman', Times, serif;
+
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nemo, maiores maxime iure sit velit sunt aliquam 
+            ipsum mollitia rerum obcaecati dicta! Voluptates sit necessitatibus minima perspiciatis non tempora ipsum?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quisquam aspernatur repellat odit eveniet 
+            reprehenderit non ipsa rem quos, magnam dicta vitae officia harum ipsum culpa deleniti exercitationem pariatur. Debitis?
+        </p>
+
+        <h2>Subtitulo do Exercicio</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nemo, maiores maxime iure sit velit sunt aliquam 
+                ipsum mollitia rerum obcaecati dicta! Voluptates sit necessitatibus minima perspiciatis non tempora ipsum?
+            </p>
+</body>
+</html>
+
+<!-- 
+    weight = peso
+    width = largura
+    height = altura
+-->

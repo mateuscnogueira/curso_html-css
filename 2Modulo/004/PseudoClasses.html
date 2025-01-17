@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+
+    <style>
+        div#d1, #d2, #d3 {
+            display: inline-block;
+            background-color: lightgrey;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px; /*Altura*/
+            width: 200px; /*Largura*/
+        }
+
+        div#d1:hover, #d2:hover, #d3:hover { /*Mudança de estado quando passa o mouse por cima*/
+            background-color: yellow;
+        }
+
+        /*--------------------------------------------------------------------------------------*/
+
+        div#teste > p { /*Apenas os paragráfos que estejam dentro de DIV*/
+            display: none;
+        }
+        div#teste:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+        div#teste:hover {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <h1>Exemplo de Hover</h1>
+        <p>Passe o mouse sobre o texto abaixo</p>
+
+        <div id="teste">
+            Passe o mouse aqui
+            <p>TEXTO ESCONDIDO</p>
+        </div>
+
+        <p>Fim do Exemplo</p>
+</body>
+</html>

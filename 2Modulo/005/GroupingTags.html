@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.5);
+            /* box-shadow: horizontal vertical espalhamento 1px cor;
+            inset + (resto) = sombra interna
+            */
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            /* border-radius: 10px, 20px, 30px, 40px; também é possível configurar cada borda individualmente */
+
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0;
+        }
+        footer > p {
+            margin: 0;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!--Forma antiga (HTML4):
+        <div>
+            <div id="cabecalho">
+                <h1>Qualquer coisa</h1>
+                
+                <div id="menu">
+                    
+                </div>
+            </div>
+            
+            <div id="conteudo">
+                <h1>Qualquer coisa</h1>
+            </div>
+            
+            <div id="rodape">
+                <p>Qualquer coisa</p>
+            </div>
+        </div>
+    -->
+
+    <!--Forma Atual (HTML5): header, main, footer funcionam como se fossem DIV's-->
+    <!--Cabeçalho-->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <!--Conteúdo Principal-->
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolores delectus eligendi explicabo voluptates nesciunt quis dignissimos atque porro dolorum. Aliquam sed veritatis tempore, necessitatibus laudantium cum magni ad deserunt!
+                </p>
+                <aside>
+                    <p>Artigo escrito por Fulado de Tal</p>
+                </aside>
+            </article>
+
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <!--Rodapé-->
+    <footer>
+        <p>Desenvolvido por: Mateus Nogueira</p>
+    </footer>
+
+    <div id="bola">
+
+    </div>
+</body>
+</html>
+
+<!--
+    <nav>       : Define os elementos de navegação do site, mostrando as opções de redirecionamento.
+    <header>    : É utilizado para representar o cabeçalho da página / seção.
+    <main>      : Define os elementos principais do site.
+    <footer>    : Representa um rodapé de um documento, como a área presente no final de uma página web.
+    <aside>     : Representa uma seção de uma página que consiste de conteúdo que é tangencialmente relacionado ao conteúdo do seu entorno.
+    <time>      : Define o tempo, usado para datas e horários.
+-->

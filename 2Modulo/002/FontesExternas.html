@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Exeternas</title>
+
+    <style>
+        @font-face {
+            font-family: 'Adrenaline';
+            src: url('FontesBaixadas/Adrenaline\ Zero.ttf') format('truetype'); 
+            /* se tivesse o arquivo .otf também, era só repetir dps de vigula:
+
+                , url('FontesBaixadas/Adrenaline\ Zero.otf') format('opentype');
+            */
+                font-weight: normal;
+                font-style: normal;
+            /*    
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-att (Apple Advanced Typography)
+                - svg
+                */
+            }
+
+        @font-face {
+            font-family: '13misa';
+            src: url(FontesBaixadas/13_Misa.TTF) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+            
+        }
+
+        body {
+            font-family: '13misa', Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Adrenaline', 'Times New Roman', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes Exportadas</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vero a sequi id unde. 
+            Laboriosam dolorem amet aliquid, corrupti fuga dignissimos, animi ab ipsum omnis, doloremque 
+            maiores quia sapiente similique.
+        </p>
+
+    <h1>Teste</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus nemo incidunt itaque maiores sit ab perferendis, error libero architecto quia illo ea facilis dicta aliquid reprehenderit optio asperiores consequatur provident.
+        </p>
+</body>
+</html>
