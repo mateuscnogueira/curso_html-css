@@ -1,0 +1,12 @@
+Indrotução - Uso do Git e GitHub
+
+Usar o GitHub Desktop para criar um New Repository (local).
+Depois para subir para o GitHub (remoto), é preciso dar o Fetch Origin.
+
+Ao realizar atualizações nos arquivos, o Git trabalha em parelelo. Ele mostra, no Vs Code e no GitHub Desktop, quais foram as alterações feitas.
+
+Após atualizações nos arquivos é preciso enviar um commit no GitHub Desktop e após isso enviar para que o repositório remoto (no GitHub) seja 
+atualizado também.
+
+O GitHub Pages tem suporte apenas para HTML, CSS e JavaScript
+Para hospedar o site é preciso que o repositório esteja público.
