@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-size</title>
+
+    <style>
+        body {
+            height: 97vh;
+            /* 
+            background-color: black;
+            background-image: url("imagens/wallpaper002.jpg");
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            attachment:
+            scroll = conteúdo e fundo rolam juntos
+            fixed = o fundo se mantém fixo e o conteúdo rola
+            */
+
+            /* Shorthands - background
+                color > image > position > repeat > [size] > attachment
+
+                o [size] na teoria (de acordo com o manual) deveria funcionar, porém nos navegadores não funciona. Então é preciso fazer o background-size separado.
+            */
+            background: black url("imagens/wallpaper002.jpg") center top no-repeat fixed;
+            background-size: cover;
+        }
+
+        main {
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+
+            border: 2px solid blue;
+            border-radius: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cumque distinctio iusto magni? Sit praesentium tenetur reiciendis inventore suscipit saepe quasi libero, ipsa, repudiandae quisquam necessitatibus quia et omnis fugit.</p>
+    </main>
+</body>
+</html>
