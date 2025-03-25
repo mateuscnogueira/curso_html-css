@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução Iframe</title>
+
+    <style>
+        iframe {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso do iframe</h1>
+        <p>Acessando o site do <a href="https://www.cursoemvideo.com">CursoEmVideo</a> para aprender a programar</p>
+
+        <p>
+            Acessando o site do 
+
+            <!--Tamanho padrão 300L x 150H -->
+            <!--
+                frameborder="0" -> serve para criar uma borda ao redor do iframe.
+                Pode configurar no style css tb.  
+
+                scolling="auto,yes,no" 
+                auto = se exceder o tamanho, cria rolagem
+                yes = sempre terá rolagem
+                no = mesmo que exceda o tamanho, não terá rolagem
+
+                essa propridade não está funcionando atualmente (03/2025)
+            -->
+            <iframe src="https://www.cursoemvideo.com" frameborder="0" scolling="no">
+                <a href="https://www.cursoemvideo.com" target="_blank">CursoEmVideo</a>
+            </iframe>
+
+            para aprender a programar
+        </p>
+
+        <p>O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> nao permite que seu conteudo seja exibido dentro de iframes</p>
+
+        <p>
+            Perfil do GitHub <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+                <a href="https://gustavoguanabara.github.io">Gustavo Guanabara</a>
+            </iframe>
+        </p>
+</body>
+</html>

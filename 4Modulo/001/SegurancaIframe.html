@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Iframe</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit accusantium nulla itaque esse aut tempore repellat, cum natus nesciunt fugiat consectetur doloribus repellendus iusto. Quasi quae illo adipisci qui. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus hic perspiciatis, odio modi voluptatem, necessitatibus enim error ipsum dolorem dolores repellat! Assumenda quo enim animi reiciendis veniam itaque possimus iure.</p>
+
+        <iframe src="PaginasTeste/Pag04.html" sandbox="sandbox" referrerpolicy="no-referrer"> <!--sandbox e no-referrer impedem que haja captura de dados e aprimora a segurança do site, porém dessa maneira o formulário está desabilitado/não funciona-->
+            Seu navegador não é compatível com Iframes...
+        </iframe>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ducimus inventore reiciendis mollitia delectus, qui tempora, nemo dolor maiores repudiandae deserunt voluptas quis, ratione aliquid at facilis debitis numquam enim.</p>
+
+        <iframe src="PaginasTeste/Pag04.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer"> <!--dessa maneira está permitindo o uso de arquivos da mesma origem, formulários e scripts-->
+            Seu navegador não é compatível com Iframes...
+        </iframe>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, perferendis! Labore omnis fugiat natus odit eligendi error, impedit ut consectetur minima quos recusandae. Exercitationem consequatur veritatis quam iusto atque? Iure. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sed recusandae minus placeat, est esse id officia quisquam voluptatibus fugiat a illo autem, error repudiandae sequi et, commodi veniam alias.</p>
+
+        <iframe src="PaginasTeste/Pag05.html" referrerpolicy="no-referrer" sandbox="sandbox"></iframe> <!--Assim está bloqueado o uso de scripts-->
+        <br>
+        <iframe src="PaginasTeste/Pag05.html" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe> <!--Assim está permitido o uso de scripts-->
+</body>
+</html>
