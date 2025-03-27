@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+        <!--autocomplete: Desabilita as opções recomendadas para preencher o campo-->
+        <!--action: É a ação/script que vai ser realizado-->
+        <!--
+            method:"get(padrão) ou post". 
+            O "get" deixa o conteúdo passado por parâmetro visível na url, já o post não. O "get" só pode ser utilizado até 3000 bytes/letras e quando não for nenhum campo sensível, como senha, cpf, fotos etc.
+            Porém, mesmo com o "post" ocultando na url, é possível acessar esse conteúdo na inspeção da página > network > headers/payload > form data
+            Para proteger os dados, terá que utilizar https.
+        -->
+        <form action="cadastro.php " method="post" autocomplete="off"> 
+            <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome"> </p>
+
+                <!--label for="..." serve para "ligar/vincular" o label ao conteúdo-->
+            <p><label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome"> </p>
+
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+</body>
+</html>

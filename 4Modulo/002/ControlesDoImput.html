@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Input</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iusuario">Usuário: </label>
+                <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" placeholder="Nome de Usuário" autocomplete="username">
+            </p>
+            <p>
+                <label for="isenha">Senha: </label>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="10" autocomplete="current-password">
+            </p>
+            <!--
+                required = campo obrigatório, ou seja, não permite enviar o formulário sem que seja preenchido.
+                minlength e maxlength = tamanho min/máx permitido.
+                size = tamanho da caixa.
+                placeholder = "dica" que fica dentro da caixa, quando é digitado algo, some automaticamente.
+
+                autocomplete dentro do imput apresenta diversas opções: username e current-password são para um sistema de login por exemplo, onde já existe um cadastro. Também existe o new-password, que é pra quando está cadastrando uma nova senha ou primeira senha.
+            -->
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+</body>
+</html>

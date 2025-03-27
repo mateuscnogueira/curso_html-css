@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outros Controles - Formulários</title>
+</head>
+<body>
+    <h1>Outros Elementos - Formulario</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset> <!--Coloca o formulário dentro de um box-->
+                <legend>Dados Pessoais</legend> <!--Coloca uma descrição para o box-->
+                <p>
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+                </p>
+                <p>
+                    <label for="iemail">Email: </label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required>
+                </p>
+                <!-- Estudar sobre RegEx -->
+                <p>
+                    <label for="itelefone">Telefone: </label>
+                    <input type="tel" name="telefone" id="itelefone" autocomplete="tel" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="imasculino" value="M"> <label for="sexo">Masculino</label> <br>
+                <input type="radio" name="sexo" id="ifeminino" value="F" checked> <label for="sexo">Feminino</label>
+            </fieldset>
+
+            <!--
+                type="radio" : marcação de apenas 1 campo -> precisa vincular o label ao name, em vez de id
+                type="checkbox" : marcação de 1 ou mais campos
+
+                checked: serve para marcar automaticamente algum campo
+            -->
+
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <input type="checkbox" name="futebol" id="ifutebol" checked> <label for="ifutebol">Futebol</label> <br>
+                <input type="checkbox" name="basquete" id="ibasquete" checked> <label for="ibasquete">Basquete</label> <br>
+                <input type="checkbox" name="natacao" id="inatacao"> <label for="inatacao">Natação</label> <br>
+                <input type="checkbox" name="tenis" id="itenis"> <label for="itenis">Tênis</label>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Outros Controles</legend>
+                <p>
+                    <label for="icor">Cor: </label>
+                    <input type="color" name="cor" id="icor" value="#00ff00"> 
+                </p>
+
+                <p>
+                    <label for="inivel">Nível de Satisfação: </label>
+                    <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+                </p>
+
+                <p>
+                    <label for="ifoto">Foto do Perfil: </label>
+                    <input type="file" name="foto" id="ifoto">
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+</body>
+</html>
