@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+        :root {
+            --corBlocks: #211E1C;
+            --corTitulo: #FFAA6E;
+            --corSubTitulo: #614530;
+            --corTexto: #FFAA6E;
+
+            --titulo: 'Silkscreen';
+            --texto: 'Orbitron';
+        }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #DB5F00, #3B1900);
+    background-attachment: fixed;
+    color: var(--corBlocks);
+}
+
+header, main, footer {
+    background-color: var(--corBlocks);
+    color: var(--corTexto);
+
+    border: 3px solid var(--corTexto);
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+header {
+    margin-top: 10px;
+    padding: 25px 0px;
+    text-align: center;
+    
+    border-radius: 10px 10px 0px 0px;
+    
+    h1 {
+        font-family: var(--titulo);
+        font-size: 2.5em;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 2px; /* Espaçamento entre letras */
+    }
+
+    nav {
+        padding: 35px 30px 5px 30px;
+    }
+
+    a {
+        font-family: var(--titulo);
+        padding: 5px 10px;
+        margin-right: 8px;
+        
+        width: 50px;
+        height: 25px;
+        border: 1px solid var(--corTexto);
+        border-radius: 3px;
+
+        transition-duration: 1s;
+    }
+    a:hover {
+        text-decoration: none;
+        background-color: var(--corTexto);
+        color: var(--corBlocks);
+    }
+}
+
+main {
+    padding: 20px 0px;
+
+    h2 {
+        padding: 20px 40px;
+        font-family: var(--texto);
+    }
+    
+    ul {
+        padding: 0px 80px;
+        
+        li {
+            padding: 5px 0px;
+        }
+        a {
+            color: var(--corTexto);
+            font-family: var(--texto);
+        }
+        a:hover {
+            color: var(--corSubTitulo);
+            text-decoration: none;
+        }
+    }
+}
+
+footer {
+    font-family: var(--titulo);
+    text-align: center;
+    padding: 8px 0px;
+
+    border-radius: 0px 0px 10px 10px;
+}
+
+a {
+    color: var(--corTexto);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--corSubTitulo);
+    text-decoration: none;
+}
+
