@@ -30,17 +30,19 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden;
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 550px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
     transition: width .4s, height .4s;
     transition-timing-function: ease;
+
+    transform: translate(-50%, -50%);
 
     #imagem {
         display: block;
@@ -55,5 +57,104 @@ main {
         display: block;
 
         padding: 10px;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.8em;
+            margin: 20px 0px;
+        }
+    }
+}
+
+.campo {
+    background-color: white;
+    border: 2px solid #5f2c82;
+
+    display: block;
+    width: 100%;
+    height: 40px;
+
+    border-radius: 8px;
+    margin: 5px 0px;
+
+    label {
+        display: none;
+    }
+
+    span {
+        /*background-color: black;*/
+        color: #5f2c82;
+        font-size: 2em;
+        width: 40px;
+        padding: 5px;
+    }
+
+    input {
+        font-size: 1em;
+
+        width: calc(100% - 45.4px);
+        height: 100%;
+        
+        border: 0px;
+        border-radius: 8px;
+        padding: 4px;
+
+        transform: translateY(-13px);
+    }
+
+    /*
+    input:focus-within {
+        background-color: white;
+    }
+    */
+}
+
+form {
+    input[type=submit] {
+        display: block;
+        font-size: 1em;
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+
+        background-color: #49a09d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #357775;
+    }
+
+    .botao {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;
+        width: 100%;
+        height: 40px;
+        padding-top:10px;
+        margin-top: 5px;
+
+        background-color: white;
+        color: #357775;
+        border: 1px solid #49a09d;
+        border-radius: 5px;
+
+        span {
+            font-size: 0.8em;
+            padding-left: 3px;
+        }
+    }
+
+    .botao:hover {
+        background-color: #357775;
+        color: white;
     }
 }
