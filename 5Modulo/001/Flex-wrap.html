@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap</title>
+
+    <style>
+        img {
+            width: 700px;
+            height: 400px;
+        }
+        hr { 
+            margin: 50px 0px;
+        }
+
+        .conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            /*
+            flex-direction: row;
+            flex-wrap: nowrap;
+            */
+            flex-flow: row wrap;
+
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+            flex: auto; /*Não permite que tenha espaço em branco dentro do elemento-pai*/
+
+            padding: 10px;
+        }
+
+        .conteiner1 {
+            background-color: lightsalmon;
+
+            display: flex;
+            /*
+            flex-direction: row;
+            flex-wrap: nowrap;
+            */
+            flex-flow: row wrap;
+            height: 100px;
+
+        }
+        .item1 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+            
+            padding: 10px;
+        }
+        .item2 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+            flex: auto; /*Não permite que tenha espaço em branco dentro do elemento-pai*/
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        flex-wrap:
+            nowrap: Não faz com que os blocos saiam da linha, mesmo que não haja espaço (não há quebra de linha)
+            wrap: há quebra de linha, o último item quebra para baixo
+            wrap-reverse: há quebra de linha, o último item quebra para cima
+
+        flex-flow:
+            flex-direction + flex-wrap:
+            em vez de fazer:
+                flex-direction: row;
+                flex-wrap: nowrap;
+            pode colocar como shorthand:
+                flex-flow: row nowrap;
+
+    -->
+    <h1>Flex-wrap</h1>
+    <img src="img/Flex-wrap1.png" alt="flex-wrap">
+
+    <h2>nowrap</h2>
+    <p>Não há quebra de linha</p>
+
+    <h2>wrap</h2>
+    <img src="img/Flex-wrap2.png" alt="flex-wrap">
+
+    <h2>wrap-reverse</h2>
+    <img src="img/Flex-wrap-reverse.png" alt="flex-wrap">
+
+    <hr>
+
+    <div class="conteiner">
+        <div class="item">Elemento - Bloco A</div>
+        <div class="item">Elemento - Bloco B</div>
+        <div class="item">Elemento - Bloco C</div>
+        <div class="item">Elemento - Bloco D</div>
+        <div class="item">Elemento - Bloco E</div>
+        <div class="item">Elemento - Bloco F</div>
+        <div class="item">Elemento - Bloco G</div>
+    </div>
+
+    <hr>
+    <div class="conteiner1">
+        <div class="item1">Elemento - Bloco A</div>
+        <div class="item2">Elemento - Bloco B</div>
+    </div>
+</body>
+</html>

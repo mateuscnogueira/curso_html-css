@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-direction</title>
+
+    <style>
+        hr {
+            margin: 50px 0px;
+        }
+
+        .conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        flex-direction:
+            row: linha - da esquerda para direita
+            row-reverse: inverso
+            column: coluna - de cima para baixo
+            column-reverse: inverso
+
+        Eixos (axis)
+            main-axis (horizontal):
+                main-start
+                main-end
+            
+            cross-axis (vertical)
+                cross-start
+                cross-end
+    -->
+    <h1>Flex-direction - Eixos</h1>
+    <img src="img/Flex-direction.png" alt="flex-direction">
+
+    <hr>
+
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

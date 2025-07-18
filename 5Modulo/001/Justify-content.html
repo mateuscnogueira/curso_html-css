@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-direction</title>
+
+    <style>
+        img {
+            width: 600px;
+            margin-top: 30px;
+        }
+
+        hr {
+            margin: 50px 0px;
+        }
+
+        .conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        justify-content:
+            flex-start: o primeiro item vai ficar grudado no main-start
+            flex-end: o último item vai ficar grudado no main-end
+
+            center: vai calcular o centro do conteiner e colocar os itens alinhados (no meio, espaços em branco, distribuídos de forma igual)
+
+            space-between: o primeiro item estará no main-start e o último no main-end, todos os demais estarão no meio com o espaçamento igual entre eles.
+
+            space-evenly: em todos os itens, inclusive antes e depois do main-start e main-end, o espaçamento entre eles será igual.
+
+            space-around: vai calcular os espaços (dos dois lados) a partir do número de itens dentro do conteiner. No caso, o primeiro item e o último terão apenas o espaçamento main-start e main-end de X, já os demais itens (entre o primeiro e o último) terão o espaçamento 2X
+
+    -->
+    <h1>Alinhamento dos Eixos: Justify-content</h1>
+    <img src="img/justify-content.png" alt="justify-content">
+    <img src="img/justify-content_spaces.png" alt="justify-content: space">
+
+
+    <hr>
+
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
