@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content</title>
+
+    <style>
+        img {
+            width: 600px;
+            margin-top: 30px;
+        }
+
+        hr {
+            margin: 50px 0px;
+        }
+
+        .conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-evenly;
+
+            height: 400px;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        align-content:
+            stretch: vai dividir em partes iguais pelo número de linhas (PADRÃO)
+            flex-start: vai pegar todos os elementos e colocar no cross-start
+            flex-end: vai pegar todos os elementos e colocar no cross-end
+            center: vai centralizar no centro do cross-axis
+
+            space-between: 
+            space-evenly:
+            space-around: 
+    -->
+    <h1>Align-content - Images</h1>
+    <img src="img/align-content/align-content-stretch.png" alt="stretch">
+    <img src="img/align-content/align-content-flex-start.png" alt="flex-start">
+    <img src="img/align-content/align-content-flex-end.png" alt="flex-end">
+    <img src="img/align-content/align-content-center.png" alt="center">
+    <img src="img/align-content/align-content-space-between.png" alt="space-between">
+    <img src="img/align-content/align-content-space-evenly.png" alt="space-evenly">
+    <img src="img/align-content/align-content-space-around.png" alt="space-around">
+
+    <h1>Alinhamento dos Eixos: Align-content</h1>
+
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+        <div class="item">N</div>
+    </div>
+</body>
+</html>
