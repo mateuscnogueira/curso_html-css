@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items - Flexible Box</title>
+
+    <style>
+        img {
+            width: 450px;
+            height: 300px;
+            margin-bottom: 50px;
+        }
+
+        .conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            flex-basis: 100px;
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        #i1 {
+            
+        }
+        #i2 {
+
+        }
+        #i3 {
+            
+        }
+        #i4 {
+            
+        }
+        #i5 {
+
+        }
+        #i6 {
+
+        }
+        #i7 {
+
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Align-basis:
+            auto (PADRÃO): A largura dos itens é proporcional ao tamanho do conteúdo
+            algum tamanho: coloca todos os itens do mesmo tamanho, independente do conteúdo interno.
+                           caso o conteiner não tenha tamanho suficiente para comportar todos os itens com o tamanho definido, todos os itens vão reduzir proporcionalmente.
+    -->
+    <h1>Align-self</h1>
+    <img src="img/align-basis.png" alt="align-basis">
+    <hr>
+    
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">Testando outro conteúdo</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">Testando outro conteúdo maior que o anterior</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>
