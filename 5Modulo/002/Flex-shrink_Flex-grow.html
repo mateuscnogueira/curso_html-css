@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items - Flexible Box</title>
+
+    <style>
+        img {
+            width: 450px;
+            height: 300px;
+            margin-bottom: 50px;
+        }
+
+        .conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            flex-basis: 250px;
+            flex-shrink: 1; /*pode encolher*/
+            flex-grow: 1; /*pode crescer*/
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        .conteiner2 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .item2 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            flex-basis: 250px;
+            flex-shrink: 1; /*pode encolher*/
+            flex-grow: 1; /*pode crescer*/
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        .conteiner3 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .item3 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            flex-basis: 200px;
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        #bx1 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #bx2 {
+            flex-shrink: 1;
+            flex-grow: 3;
+        }
+        #bx3 {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Padrão:
+        flex-shrink: 1; pode encolher
+        flex-grow: 0; não pode crescer
+    -->
+    <h1>flex-shrink e flex-grow</h1>
+    <hr>
+    
+    <h2>Usando com flex-wrap: nowrap</h2>
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+    </div>
+    
+    <br>
+
+    <h2>Usando com flex-wrap: wrap</h2>
+    <div class="conteiner2">
+        <div class="item2" id="i1">Home</div>
+        <div class="item2" id="i2">Login</div>
+        <div class="item2" id="i3">Sobre</div>
+    </div>
+
+    <h2>Exemplos: flex-basis + flex-shrink + flex-grow</h2>
+    <img src="img/flex-basis+flex-shrink+flex-grow.png" alt="flex-basis+flex-shrink+flex-grow">
+
+    <div class="conteiner3">
+        <div class="item3" id="bx1">Menu</div>
+        <div class="item3" id="bx2">Conteudo</div>
+        <div class="item3" id="bx3">Propaganda</div>
+    </div>
+</body>
+</html>
