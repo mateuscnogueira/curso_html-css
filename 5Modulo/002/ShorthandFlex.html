@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand Flex</title>
+    <style>
+        .conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            /*
+            Shorthand Flex:
+                flex-grow -> flex-shrink -> flex-basis;
+                flex: 0 1 150px;
+
+            Valores padrões:
+                flex: 0 1 auto; = flex: initial;
+                padrão
+                
+                flex: 0 0 auto; = flex: none;
+                elementos n podem crescer/diminuir (não ser flexível)
+
+                flex: 1 1 auto; = flex auto;
+                elementos são ao máximo flexíveis
+
+                flex: 3; = flex: 3 1 auto;
+            */
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        #i1 {
+           flex: 1 0 200px;
+        }
+        #i2 {
+           flex: 1 1 150px;
+        }
+        #i3 {
+           flex: 1 8 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shorthand Flex</h1>
+    
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+    </div>
+</body>
+</html>
